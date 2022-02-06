@@ -1,127 +1,271 @@
-/* .container{
-    height: 100vh   ;
-    width: 100%;
-    background-color: blue;
-}
-
-@media screen and (max-width: 1100px){
-    .container{
-        background-color: blueviolet;
-    }
-} */
-
 *{
-    margin: 0px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    background-color: aquamarine;
-    border: 2px solid black;
-    height: 10vh;
+
+header{
     width: 100%;
-}
-
-.logo{
-    width: 70%;
-    font-size: 2rem;
+     height: 50vh;
+    font-family: sans-serif;
+  }
+  nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+  }
+  .logo{
+    font-size: 2em;
+  }
+  .logo span{
     font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-}
+    text-decoration-line: underline;
 
-.menu{
-    width: 30%;
-}
-
-.menu ul{
-    display: flex;
-    list-style: none;
-    justify-content: end;
-
-}
-
-.menu ul li{
-    margin: 10px;
-
-}
-
-section{
-    height: 80vh;
-    width: 100%;
-    display: flex;
-}
-
-.main-content{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    background-color: coral;
-}
-
-.side-bar{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    background-color: crimson;
-}
-
-.side-bar ul{
-    list-style: none;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: darkcyan;
-    align-items: center;
-}
-
-@media screen and (max-width:1182px) {
-    .logo{
-        width: 70%;
-    }
-    .menu{
-        width: 30%;
-    }
+    color: white;
+  
     
-}
+  }
+  .menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 45px;
+    letter-spacing: 2SPX;
+  text-transform: uppercase;
+  }
+  .menu a:hover{
+    background-color: blueviolet;
+    border: 2px solid ;
+  border-radius: 25px;
+    /* border-radius: ; */
+  }
 
-@media screen and (max-width:586px) {
-    .logo{
-        /* width: 70%; */
-        font-size: 1.4rem;
-    }
-    .menu{
-        width: 30%;
-    }  
-}
+  .get a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+  background-color: slategrey;
+  border-radius: 8px;
+  } 
 
-@media screen and (max-width:375px) {
-    .logo{
-        font-size: 1rem;
-    }
-    .menu{
-        width: 30%;
-    }
+  /* hover use  */
+  .get a:hover{
+    color: blueviolet;
+  }
+
+  /* h-text section design */
+   .h-text{
+     width: 100%;
+     /* height: 70px; */
+     display: flex;
+     /* border: 1px solid yellow; */
+     justify-content: space-around;
+     align-items: center;
+     /* padding-right: 300px; */
+     /* padding-top: 300px; */
+     /* background-color: ghostwhite; */
+     padding-left: 150px;
+     font-size: 25px;
+     color: black;
+     /* font-weight: 0.8em; */
+   }
+   .h-text span{
+      font-weight: 800;
+      font-size: 30px;
+      text-decoration-line: underline;
+  
+      color: black;
     
+
+   }
+   .h-text a{
+     text-decoration: none;
+     background-color: black;
+     color: white;
+     padding: 10px 20px;
+     letter-spacing: 5px;
+     border-radius: 10pt;
+
+   }
+   .img{
+     /* border: 5px solid black; */
+     width: 700px;
+     height: 300px;
+     /* margin-bottom: 20px; */
+     padding-left: 250px;
+     /* object-fit: contain; */
+
+   }
+   .right{
+     font-size: 15px;
+     margin: 0px 0px 10px 0px;
+     
+   }
+   .read{
+     background-color: black;
+     color: white;
+   }
+  
+   
+   /* about create and design */
+     
+     .about{
+      background: url(khan.jpg) no-repeat left;
+      background-size: 60%;
+      background-color: #fdfdfd;
+      overflow: hidden;
+      padding: 100px 0;
+  }
+  .inner-section{
+      width: 55%;
+      float: right;
+      background-color: #d39393;
+      padding: 140px;
+      box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+  }
+  .inner-section h1{
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 900;
+  }
+  .text{
+      font-size: 13px;
+      color: #545454;
+      line-height: 30px;
+      text-align: justify;
+      margin-bottom: 50px;
+  }
+  /* .text span{
+    text-decoration: underline;
+    font-size: 10px; */
+  /* } */
+  .skills button{
+      font-size: 22px;
+      text-align: center;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 20px;
+      padding: 8px;
+      padding-top: 5px;
+      margin-top: 15px;
+      width: 200px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+  }
+  .skills button:hover{
+      transition: 1s;
+      background-color: #ecf5f5;
+      color: #00999c;
+  }
+  @media screen and (max-width:1200px){
+      .inner-section{
+          padding: 80px;
+      }
+  }
+  @media screen and (max-width:1000px){
+      .about{
+          background-size: 100%;
+          padding: 100px 40px;
+      }
+      .inner-section{
+          width: 100%;
+      }
+  }
+  
+  @media screen and (max-width:600px){
+      .about{
+          padding: 0;
+      }
+      .inner-section{
+          padding: 60px;
+      }
+      .skills button{
+          font-size: 19px;
+          padding: 5px;
+          width: 160px;
+      }
+  } 
+
+
+
+  .services-section{
+    padding: 50px 100px;
+
+
+  }
+.services-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+  color: black;
+
+
+}
+.services-section h2{
+  padding-top: 10px;
+}
+.cards-section{
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.cards-section>div{
+  padding: 30px 10px;
+  cursor: pointer;
+}
+.cards-section>div:hover{
+  background-color: whitesmoke;
+  transition: 0.5s ease;
 }
 
-@media screen and (max-width:700px) {
-    .section{
-        height: 324px;
-        display: block;
-    }
-    
-    .main-content{
-        width: 100%;
-    }
 
-    .side-bar{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+
+
+/* footer design  */
+
+/* /* 
+footer{
+  width: 100%;
+  height: 100%;
+} */
+.copyright{
+  padding: 35px;
+  background-color: #25262e;
+  /* height: 50%; */
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+color: white;
+/* float: right; */
+}
+
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
 
 }
+
+  
+   
